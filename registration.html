@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://kit.fontawesome.com/23b13db498.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/registration.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/logo-white.png" type="image/x-icon">
+    <title>Student Registration</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div>
+            <img class="fimage" src="images/logo-white.png" alt="">
+        </div>
+        <div>
+            <img class="simage" src="images/lebel-white.png" alt="">
+        </div>
+    </div>
+
+
+    <!-- Navigation bar -->
+    <nav class="nav">
+        <ul class="list">
+            <li><a href="home.html"> Home</a></li>
+            <li id="dropdown1">Faculty 
+                <i style="font-size:14px; color:#c3d136;" class="fa-solid fa-angle-down"></i>
+                <ul id="iselect1" name="Faculty" id="">
+                    <li value="">Faculty of Business Administration</li>
+                    <li value="">Faculty of Arts and Modern Language</li>
+                    <li value="">Faculty of Social Science</li>
+                    <li value="">Faculty of Modern Science</li>
+                </ul>
+            </li>
+            <li id="dropdown2">Faculty Members 
+                <i style="font-size:14px; color:#c3d136;" class="fa-solid fa-angle-down"></i>
+                <ul id="iselect2" name="" id="">
+                    <li value="">Department of CSE</li>
+                    <li value="">Department of EEE</li>
+                    <li value="">Department of English</li>
+                    <li value="">Department of LAW</li>
+                    <li value="">Department of Business Administration</li>
+                    <li value="">Department of Architecture</li>
+                    <li value="">Department of Civil Engineering</li>
+                    <li value="">Department of Islamic Study</li>
+                    <li value="">Department of Public Health</li>
+                    <li value="">Department of Tourism and Hospitality Management</li>
+                    <li value="">Departmentof Bangla</li>
+                </ul>
+            </li>
+            <li><a href="#latest-news">Latest News</a></li>
+            <li><a href="#ievents">Events</a> </li>
+            <li><a href="#cam-facility">Campus Facilities</a> </li>
+            <li><a href="#contact-us"> Contact Us</a></li>
+            <li><a href="about.html"> About</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+
+
+
+
+    <!-- Student Registration-->
+    <div class="fhome">
+        <div class="background">
+            <div>
+                <h1 id="reg">Student Registration</h1>
+            </div>
+            <div>
+                <form action="" method="" onsubmit="validation();return false">
+                    <div>
+                        <div class="lemail">
+                            <input type="text" name="registration" placeholder="First Name" id="fname">
+                        </div>
+                        <div class="lemail">
+                            <input type="text" name="registration" placeholder="Last Name" id="lname">
+                        </div>
+                        <div class="lemail">
+                            <input type="email" name="registration" placeholder="Email" id="iemail">
+                        </div>
+                        <div class="lemail">
+                            <input type="text" name="registration" placeholder="Mobile Number" id="mobile">
+                        </div>
+                        <div class="lemail">
+                            <input type="password" name="registration" placeholder="Password" id="pass">
+                        </div>
+                        <div class="lemail">
+                            <input type="password" name="registration" placeholder="Confirm Password" id="cpass">
+                        </div>
+                        <div class="lemail">
+                            <input placeholder="Date of Birth" type="text" onfocus="(this.type = 'date')" id="date">
+                        </div>
+
+                        <div>
+                            <table>
+                                <tr>
+                                    <td class="check">Select Certificates</td>
+                                    <td>:</td>
+                                    <td class="check1">
+                                        <input type="checkbox" id="pec">
+                                        <label class="box">PEC</label>
+                                        <input type="checkbox" id="jsc">
+                                        <label class="box">JSC</label>
+                                        <input type="checkbox" id="ssc">
+                                        <label class="box">SSC</label>
+                                        <input type="checkbox" id="hsc">
+                                        <label class="box">HSC</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="check">Select Gender</td>
+                                    <td>:</td>
+                                    <td class="check1">
+                                        <input type="radio" name="gender" id="male">
+                                        <label class="box">Male</label>
+                                        <input type="radio" name="gender" id="female">
+                                        <label class="box">Female</label>
+                                        <input type="radio" name="gender" id="others">
+                                        <label class="box">Others</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="check">Select a Board</td>
+                                    <td>:</td>
+                                    <td class="check1">
+                                        <select name="" id="">
+                                            <option value="">Select a board</option>
+                                            <option value="">Sylhet</option>
+                                            <option value="">Dhaka</option>
+                                            <option value="">Rajshahi</option>
+                                            <option value="">Comilla</option>
+                                            <option value="">Jessore</option>
+                                            <option value="">Chittagong</option>
+                                            <option value="">Barisal</option>
+                                            <option value="">Dinajpur</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="check">Upload Photo</td>
+                                    <td>:</td>
+                                    <td class="check1"><input type="file" name="" id=""></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div>
+                        <input type="submit" id="icontinue" class="butns" value="Continue">
+                    </div>
+                    <div class="forgot-pass">
+                        <a href="#">Have an account? </a> | <a href="login.html">Login</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+
+
+        <!-- Home part-2 -->
+        <div class="rightcontent">
+            <div class="rightfhome1">
+                <div class="forms1">
+                    <input type="search" name="" placeholder="Search For:" id="searchfor">
+                </div>
+                <div>
+                    <button class="btns" onclick="parent.location='https://www.lus.ac.bd/'"
+                        formtarget="_blank">Search</button>
+                </div>
+            </div>
+            <div class="rightfhome">
+                <h2 class="forms">Forms & Downloads</h2>
+                <button class="btns2" onclick="parent.location='https://www.lus.ac.bd/useful-forms/'"
+                    formtarget="_blank">Click
+                    Here</button>
+            </div>
+            <div class="rightfhome">
+                <h2 class="forms">Academic Calender</h2>
+                <button class="btns2" onclick="parent.location='https://www.lus.ac.bd/academic-calendar/'"
+                    formtarget="_blank">Click
+                    Here</button>
+            </div>
+            <div class="rightfhome">
+                <h2 class="forms">Facebook</h2>
+                <button class=" btn"><a href="https://www.facebook.com/leadinguniversity2001"><img style="width: 100%;"
+                            src="images/LUImage.jpg" alt=""> </a></button>
+            </div>
+            <div class="rightfhome">
+                <h2 class="forms">Instagram</h2>
+                <button class=" btn"><a href="https://www.instagram.com/leadinguniversity/"><img style="width: 100%;"
+                            src="images/instagram.png" alt=""></a></button>
+            </div>
+            <div>
+                <div class="cse">Department of CSE</div>
+                <div class="eee">Department of EEE</div>
+                <div class="cse">Department of ENGLISH</div>
+                <div class="eee">Department of LAW</div>
+                <div class="cse">Department of Business Administration</div>
+                <div class="eee">Department of Architecture</div>
+                <div class="cse">Department of Civil Engineering</div>
+                <div class="eee">Department of Islamic Study</div>
+                <div class="cse">Department of Public Health</div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <div class="leading" id="contact-us">
+        <div class="south">
+            <p class="cont">Contact</p>
+            <p class="contact">Leading Univarsity</p>
+            <p class="contact">Ragibnagar, South Surma, Sylhet-3112</p>
+            <p class="contact"> Phone: 01313084499.</p>
+            <p class="contact">Email: info@lus.ac.bd </p>
+        </div>
+    </div>
+    <footer class="footer">&copy; Copyright 2022, Ismat Jerin. All rights Reserved</footer>
+
+
+    <!-- Validation -->
+    <script>
+        var nameRegex = /[a-zA-Z_.]/;
+        var emailRegex = /(cse|eee|law|eng)(_)[0-9]{10,}(@lus\.ac\.bd)/
+        var mobileRegex = /(\+88|88)?(01)[3-9][0-9]{8}/;
+        var passwordRegex = /((?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[#@*$.])).{8,20}/;
+        function validation() {
+            var firstName = document.getElementById("fname").value;
+            var lastName = document.getElementById("lname").value;
+            var email = document.getElementById("iemail").value;
+            var mobile = document.getElementById("mobile").value;
+            var password = document.getElementById("pass").value;
+            var confirmPassword = document.getElementById("cpass").value;
+            if (!firstName.match(nameRegex)) {
+                var message = document.getElementById("fname");
+                message.value = "";
+                message.placeholder = "*Name should not contain any digit";
+                message.classList.add("placeholder");
+            }
+            else if (!lastName.match(nameRegex)) {
+                var message = document.getElementById("lname");
+                message.value = "";
+                message.placeholder = "*Name should not contain any digit";
+                message.classList.add("placeholder");
+            }
+            else if (!email.match(emailRegex)) {
+                var message = document.getElementById("iemail");
+                message.value = "";
+                message.placeholder = "*Only lu email is allow";
+                message.classList.add("placeholder");
+            }
+            else if (!mobile.match(mobileRegex)) {
+                var message = document.getElementById("mobile");
+                message.value = "";
+                message.placeholder = "*Only Bangladeshi Number is allow";
+                message.classList.add("placeholder");
+            }
+            else if (!password.match(passwordRegex)) {
+                var message = document.getElementById("pass");
+                message.value = "";
+                message.placeholder = "*Password must be contain 8 characters, 1 uppercase, 1 Lowercase 1 Number and 1 special character";
+                message.classList.add("placeholder");
+            }
+            else if (confirmPassword != password) {
+                alert("Password didn't match");
+            }
+            else{
+                window.history.go(-2);
+            }
+        }
+    </script>
+</body>
+
+</html>
